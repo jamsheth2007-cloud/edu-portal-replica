@@ -38,13 +38,13 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Program card colors - more vibrant */
-    --card-lime: 84 85% 60%;
-    --card-coral: 6 93% 67%;
-    --card-sky: 199 89% 48%;
-    --card-violet: 271 91% 65%;
-    --card-blue: 217 91% 60%;
-    --card-orange: 33 100% 53%;
+    /* Program card colors - super bright */
+    --card-lime: 84 100% 65%;
+    --card-coral: 6 100% 70%;
+    --card-sky: 199 100% 55%;
+    --card-violet: 271 100% 70%;
+    --card-blue: 217 100% 65%;
+    --card-orange: 33 100% 60%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(221 70% 45%) 100%);

@@ -11,21 +11,21 @@ interface ProgramCardProps {
 
 const ProgramCard = ({ title, description, colorVariant, imageSrc }: ProgramCardProps) => {
   const bgColorClass = {
-    lime: "bg-gradient-to-br from-card-lime/30 to-card-lime/10",
-    coral: "bg-gradient-to-br from-card-coral/30 to-card-coral/10",
-    sky: "bg-gradient-to-br from-card-sky/30 to-card-sky/10",
-    violet: "bg-gradient-to-br from-card-violet/30 to-card-violet/10",
-    blue: "bg-gradient-to-br from-card-blue/30 to-card-blue/10",
-    orange: "bg-gradient-to-br from-card-orange/30 to-card-orange/10",
+    lime: "bg-card-lime/90",
+    coral: "bg-card-coral/90",
+    sky: "bg-card-sky/90",
+    violet: "bg-card-violet/90",
+    blue: "bg-card-blue/90",
+    orange: "bg-card-orange/90",
   }[colorVariant];
 
   const circleColorClass = {
-    lime: "bg-card-lime/40",
-    coral: "bg-card-coral/40",
-    sky: "bg-card-sky/40",
-    violet: "bg-card-violet/40",
-    blue: "bg-card-blue/40",
-    orange: "bg-card-orange/40",
+    lime: "bg-card-lime/50",
+    coral: "bg-card-coral/50",
+    sky: "bg-card-sky/50",
+    violet: "bg-card-violet/50",
+    blue: "bg-card-blue/50",
+    orange: "bg-card-orange/50",
   }[colorVariant];
 
   return (
@@ -37,7 +37,7 @@ const ProgramCard = ({ title, description, colorVariant, imageSrc }: ProgramCard
     >
       {/* Decorative arrow */}
       <div className="absolute top-6 right-6 opacity-20">
-        <ArrowUpRight className="w-16 h-16" strokeWidth={1.5} />
+        <ArrowUpRight className="w-16 h-16 text-foreground" strokeWidth={1.5} />
       </div>
 
       <div className="mb-6 flex justify-center relative">
@@ -47,12 +47,12 @@ const ProgramCard = ({ title, description, colorVariant, imageSrc }: ProgramCard
       </div>
       
       <h3 className="text-2xl font-bold mb-4 text-foreground leading-tight">{title}</h3>
-      <p className="text-foreground/70 mb-6 leading-relaxed">{description}</p>
+      <p className="text-foreground/80 mb-6 leading-relaxed">{description}</p>
       
       <Button 
         variant="default" 
         size="lg"
-        className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-medium shadow-lg"
+        className="rounded-full bg-foreground text-background hover:bg-foreground/90 font-medium shadow-lg hover:shadow-xl"
       >
         Let's Chat
         <MessageCircle className="ml-2 w-4 h-4" />

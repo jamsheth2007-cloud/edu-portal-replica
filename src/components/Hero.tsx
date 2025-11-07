@@ -3,17 +3,17 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-background via-background to-secondary/30 py-24 px-4 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-background via-background/95 to-background py-24 px-4 overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <h2 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
           Your Tech Journey Begins{" "}
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
             @ Madras Engineering College.
           </span>
         </h2>
@@ -24,7 +24,7 @@ const Hero = () => {
         </p>
         <Button 
           size="lg" 
-          className="rounded-full px-10 py-7 text-lg font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105"
+          className="rounded-full px-10 py-7 text-lg font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105 bg-foreground text-background hover:bg-foreground/90"
         >
           Get in Touch
           <ArrowRight className="ml-2 w-5 h-5" />
