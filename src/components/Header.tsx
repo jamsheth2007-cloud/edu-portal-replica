@@ -2,11 +2,11 @@ import { Phone, MapPin } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="bg-card border-b border-border sticky top-0 z-50 shadow-sm">
+    <header className="bg-card border-b border-border sticky top-0 z-50 shadow-sm backdrop-blur-sm bg-card/95">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -37,23 +37,24 @@ const Header = () => {
               </svg>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">TECH INSTITUTE</h1>
-              <p className="text-xs text-muted-foreground">Engineering Excellence</p>
+              <h1 className="text-xl font-bold text-primary uppercase tracking-wide">Madras</h1>
+              <p className="text-xs text-primary/70 font-medium uppercase tracking-wider">Engineering College</p>
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            <div className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg">
-              <span className="text-sm font-medium">Code: 2024</span>
+            <div className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-bold shadow-md">
+              <span className="text-xs opacity-70">TNEA Code</span>
+              <span className="text-base">1203</span>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <div className="flex items-center gap-2 text-sm">
+              <div className="flex items-center gap-2 text-sm font-medium">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="font-medium">+91 98765 43210</span>
+                <span>+91 70020 80020</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                <span>Mumbai, India</span>
+                <span>Chennai, India</span>
               </div>
             </div>
           </div>
