@@ -12,9 +12,11 @@ const Hero = () => {
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <h2 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-          Your Tech Journey Begins{" "}
+         
+        
           <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-            @ Madras Engineering College.
+            your tech journey begins with jamshe in 
+            Madras Engineering College.
           </span>
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
